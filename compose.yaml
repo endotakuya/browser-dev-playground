@@ -1,0 +1,8 @@
+services:
+  app:
+    image: rust:1.80.1-slim-bookworm
+    volumes:
+      - .:/app
+    working_dir: /app
+    restart: always
+    tty: true
